@@ -1,49 +1,22 @@
 {
   "name": "firstapp",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "start": "node server/index.js",
-    "dev": "nodemon server/index.js",
-    "lint": "vue-cli-service lint"
-  },
+  "version": "1.0.0",
+  "description": "Vue and Express Todo App",
+  "main": "index.js",
   "dependencies": {
     "axios": "^0.19.2",
-    "core-js": "^3.6.5",
+    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mongodb": "^3.6.0",
-    "vue": "^2.6.11"
+    "mongodb": "^3.6.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.4.0",
-    "@vue/cli-plugin-eslint": "~4.4.0",
-    "@vue/cli-service": "~4.4.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "nodemon": "^2.0.4",
-    "vue-template-compiler": "^2.6.11"
+    "nodemon": "^2.0.4"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+  "author": "gilli",
+  "license": "ISC"
 }
